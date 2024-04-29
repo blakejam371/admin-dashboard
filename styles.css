@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,600,800');
+
+* {
+  box-sizing: border-box;
+  border: solid 0.5px red;
+}
+
+:root {
+  --ff: 'Fira Sans', sans-serif;
+  
+  --fw-n: 300;
+  --fw-m: 600;
+  --fw-b: 800;
+  
+  --fs-1: 6.5rem;
+  --fs-2: 5rem;
+  --fs-3: 3.5rem;
+  --fs-4: 2rem;
+  --fs-5: 1.5rem;
+  --fs-p: 1rem;
+  
+  --primary-clr: #307989;
+  --secondary-clr: #548CA8;
+  --secondary-clr-light: #6fb9df;
+  --accent-clr: #EF6461;
+  --accent-clr-dark:#b74a48;
+  --opaque-background: rgba(123, 107, 107, 0.25);
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff);
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: 1fr 6fr;
+  height: 100vh;
+}
+
+#sidebar {
+  background-color: var(--primary-clr);
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: 1fr 7fr;
+  grid-row: span 2;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  line-height: 2rem;
+}
+
+#header {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+#main-content {
+  grid-row: span 1;
+  grid-column: span 1;
+  background-color: var(--opaque-background);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+#projects {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+#section-header {
+  grid-column: span 2;
+  justify-self: left;
+  margin-left: 0.5rem;
+}
+
+.project-items {
+  background-color: var(--accent-clr-dark);
+  min-height: 100px;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.project-items p {
+  color: white;
+  font-weight: var(--fw-n);
+  font-size: var(--fs-p);
+}
+
+.project-items .title {
+  font-size: var(--fs-p);
+  text-align: left;
+  font-weight: var(--fw-m);
+}
+
+button {
+  font-family: var(--ff);
+  background-color: var(--accent-clr);
+  color: white;
+  font-size: var(--fs-p);
+}
+
+#right-content {
+  display: grid;
+  grid-template-rows: repeat(1fr);
+}
+
+
