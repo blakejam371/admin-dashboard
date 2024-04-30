@@ -1,7 +1,6 @@
 /* Font imports and root variables */
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:300,600,800');
 
-/* Global reset and variables */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -41,6 +40,10 @@ ul {
   margin-left: 1rem;
 }
 
+ul:hover {
+  cursor: pointer;
+}
+
 #container {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -61,6 +64,7 @@ ul {
   filter: brightness(0) invert(1);
   height: 2.5rem;
   margin-right: 0.5rem;
+  margin-left: 1rem;
   align-self: center;
 }
 
@@ -74,16 +78,18 @@ ul {
 
 #sidebar .logo img {
   height: 6rem;
-  margin-left: 1rem;
+  margin-left: rem;
 }
 
 #sidebar-header {
   align-self: center;
   font-size: var(--fs-4);
   margin-left: 1rem;
+  min-width: 12rem;
 }
 
 .main-links {
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
