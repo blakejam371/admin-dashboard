@@ -9,20 +9,56 @@
 </head>
 <body>
   <div id="container">
-    <div id="sidebar">
-      <h2 id="sidebar-header">Dashboard</h2>
-      <ul id="sidebar-items">
-        <li>Home</li>
-        <li>Profile</li>
-        <li>Messages</li>
-        <li>History</li>
-        <li>Tasks</li>
-        <li>Communities</li>
-        <li>Settings</li>
-        <li>Support</li>
-        <li>Privacy</li>
-      </ul>
-    </div>
+    <nav id="sidebar">
+      <div class="logo">
+        <img src="./images/chart-arc.svg" alt="Main logo">
+        <h2 id="sidebar-header">Dashboard</h2>
+      </div>
+      <div class="main-links">
+        <ul>
+          <li>
+            <img src="./images/home-circle-outline.svg" alt="Home">
+            <p>Home</p>
+          </li>
+          <li>
+            <img src="./images/face-man-profile.svg" alt="Profile">
+            <p>Profile</p>
+          </li>
+          <li>
+            <img src="./images/message-badge.svg" alt="Messages">
+            <p>Messages</p>
+          </li>
+          <li>
+            <img src="./images/history.svg" alt="History">
+            <p>History</p>
+          </li>
+          <li>
+            <img src="./images/checkbox-marked-circle-auto-outline.svg" alt="Tasks">
+            <p>Tasks</p>
+          </li>
+          <li>
+            <img src="./images/account-group.svg" alt="Communities">
+            <p>Communities</p>
+          </li>
+        </ul>
+      </div>
+      <div class="secondary-links">
+        <ul>
+          <li>
+            <img src="./images/cogs.svg" alt="Settings">
+            <p>Settings</p>
+          </li>
+          <li>
+            <img src="./images/face-agent.svg" alt="Support">
+            <p>Support</p>
+          </li>
+          <li>
+            <img src="./images/lock-outline.svg" alt="Privacy">
+            <p>Privacy</p>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div id="header">
       <div id="header-top">
         <input type="search" id="searchbar">
@@ -40,8 +76,8 @@
       </div>
     </div>
     <div id="main-content">
-        <div id="projects">
-          <h3 id="main-header">Your Projects</h3>
+      <div id="projects">
+        <h3 class="section-header">Your Projects</h3>
           <div class="project-items">
             <p class="title">Super Cool Projects</p>
             <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -69,7 +105,7 @@
         </div>
         <div id="right-content">
           <div id="announcements">
-            <h3 id="section-header">Announcements</h3>
+            <h3 class="section-header">Announcements</h3>
             <div class="announcement-items">
               <p class="title">Site Maintenance</p>
               <p class="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
@@ -84,22 +120,37 @@
             </div>
           </div>
           <div id="trending">
-            <h3 id="section-header">Trending</h3>
+            <h3 class="section-header">Trending</h3>
             <div class="trending-items">
-              <p class="title"></p>
-              <p class="content"></p>
+              <img src="./images/dog.svg" alt="Profile Picture">
+              <p>
+                <span class="title">@tegan</span>
+                <span class="content">World Peace Leader</span>
+              </p>
             </div>
             <div class="trending-items">
-              <p class="title"></p>
-              <p class="content"></p>
+              <img src="./images/cat.svg" alt="Profile Picture">
+              <p>
+                <span class="title">@morgan</span>
+                <span class="content">Super Cool Project</span>
+              </p>
             </div>
             <div class="trending-items">
-              <p class="title"></p>
-              <p class="content"></p>
+              <img src="./images/rabbit-variant.svg" alt="Profile Picture">
+              <p>
+                <span class="title">@kendall</span>
+                <span class="content">Life Changing App</span>
+              </p>
             </div>
-          </div>
-          </div>
+            <div class="trending-items">
+              <img src="./images/horse.svg" alt="Profile Picture">
+              <p>
+                <span class="title">@kendall</span>
+                <span class="content">No Traffic Maker</span>
+              </p>
+            </div>
         </div>
+      </div>
     </div>
   </div>
 </body>
