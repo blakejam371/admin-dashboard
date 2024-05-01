@@ -4,7 +4,6 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  /* border: solid 0.5px red; */
 }
 
 :root {
@@ -99,6 +98,75 @@ ul:hover {
   grid-column: span 1;
 }
 
+#header-top {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icons {
+  display: flex;
+  margin-left: auto;
+  margin-right: 2rem;
+  align-items: center;
+}
+
+.icons > img {
+  height: 3rem;
+  margin: 1rem;
+}
+
+.icons > p {
+  font-weight: var(--fw-m);
+}
+
+#search {
+  display: flex;
+  min-width: 50%;
+}
+
+#search > #search-icon {
+  height: 2rem;
+  align-self: center;
+  margin: 0.5rem;
+}
+
+#search > input {
+  min-width: 70%;
+  height: 2rem;
+  align-self: center;
+  margin: 1rem;
+  background-color: var(--opaque-background);
+  border: 4px solid var(--primary-clr);
+  border-radius: 1rem;
+}
+
+.welcome > img {
+  height: 4rem;
+  margin: 1rem;
+}
+
+#header-bottom {
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+  margin-left: auto;
+  margin-right: 2rem;
+}
+
+.buttons > button {
+  margin-left: 0.5rem;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  min-width: 50%;
+  font-weight: var(--fw-m);
+}
+
 #main-content {
   background-color: var(--opaque-background);
   display: grid;
@@ -144,11 +212,15 @@ ul:hover {
 
 button {
   font-family: var(--ff);
+  font-weight: var(--fw-b);
   background-color: var(--accent-clr);
   color: white;
   font-size: var(--fs-p);
   border-radius: 1rem;
   border: 4px solid var(--primary-clr);
+  min-height: 3rem;
+  width: 5rem;
+  cursor: pointer;
 }
 
 #right-content {
