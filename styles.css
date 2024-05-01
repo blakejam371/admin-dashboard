@@ -278,6 +278,6 @@ button {
   }
 
   #sidebar {
-    grid-template-rows: auto 1fr;
+    display: none;
   }
 }
